@@ -16,6 +16,7 @@ public class ReservationController : ControllerBase
         _service = service;
     }
 
+    [HttpGet]
     public async Task<IActionResult> AddReservation(ReservationDTO reservation)
     {
         try
